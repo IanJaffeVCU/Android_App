@@ -1,1 +1,0 @@
-Need to write description for Android app.
