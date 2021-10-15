@@ -1,4 +1,4 @@
-### (App Name)
+### uRemindMe
 Help students maintain healthy balanced productive schedule.
 
 ### What the To-Do App is going to do.
