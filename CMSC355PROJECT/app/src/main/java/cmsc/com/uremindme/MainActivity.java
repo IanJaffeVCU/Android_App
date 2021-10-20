@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
         Log.i("info", "Welcome to CMSC355 Project");
 
-        Toast.makeText(this, "Welcome Parisy, Ian, Ashok, and MySelf", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Welcome Praisy, Ian, Ashok, and MySelf", Toast.LENGTH_LONG).show();
 
 
     }
