@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout6"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/recycler_attendance_subname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Maths"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/recycler_attendance_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="95"
+            app:layout_constraintEnd_toEndOf="@+id/recycler_attendance_subname"
+            app:layout_constraintStart_toStartOf="@+id/recycler_attendance_subname"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_attendance_subname" />
+
+        <ImageButton
+            android:id="@+id/recycler_attendance_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/roundcornor_ripple"
+            android:backgroundTint="@android:color/holo_green_dark"
+            app:layout_constraintEnd_toEndOf="@+id/recycler_attendance_attended"
+            app:layout_constraintStart_toStartOf="@+id/recycler_attendance_attended"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_attendance_attended"
+            app:srcCompat="@drawable/done_icon" />
+
+        <ImageButton
+            android:id="@+id/recycler_attendance_notdone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/roundcornor_ripple"
+            android:backgroundTint="@android:color/holo_red_dark"
+            app:layout_constraintEnd_toEndOf="@+id/recycler_attendance_missed"
+            app:layout_constraintStart_toStartOf="@+id/recycler_attendance_missed"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_attendance_missed"
+            app:srcCompat="@drawable/close_icon" />
+
+        <TextView
+            android:id="@+id/recycler_attendance_attended"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/recycler_attendance_attended_minus"
+            app:layout_constraintStart_toStartOf="@+id/recycler_attendance_attended_minus"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_attendance_attended_minus" />
+
+        <TextView
+            android:id="@+id/recycler_attendance_missed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/recycler_attendance_missed_minus"
+            app:layout_constraintStart_toStartOf="@+id/recycler_attendance_missed_minus"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_attendance_missed_minus" />
+
+        <TextView
+            android:id="@+id/recycler_attendance_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Safe"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_attendance_done" />
+
+        <ImageButton
+            android:id="@+id/recycler_attendance_attended_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/roundcornor_ripple"
+            android:backgroundTint="@android:color/holo_green_dark"
+            app:layout_constraintEnd_toStartOf="@+id/recycler_attendance_missed_minus"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_attendance_percentage"
+            app:srcCompat="@drawable/remove_icon" />
+
+        <ImageButton
+            android:id="@+id/recycler_attendance_missed_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundcornor_ripple"
+            android:backgroundTint="@android:color/holo_red_dark"
+            app:layout_constraintBottom_toBottomOf="@+id/recycler_attendance_attended_minus"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/recycler_attendance_attended_minus"
+            app:layout_constraintTop_toTopOf="@+id/recycler_attendance_attended_minus"
+            app:srcCompat="@drawable/remove_icon" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
