@@ -10,4 +10,4 @@ Help students maintain healthy balanced productive schedule.
 
 4. All of the schedule planning will be based on 8-8-8 rule (8 hours of sleeping, 8hrs of class and studying and 8hrs of free time to work or do other personal activities).
 
-5. Have an Analytical page that shows how oftem and consistent the user are hitting there goals.
+5. Have an Analytical page that shows how oftem and consistent the user are hitting there goals..
