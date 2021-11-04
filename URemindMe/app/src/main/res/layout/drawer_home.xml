@@ -17,7 +17,7 @@
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintTop_toTopOf="parent"
-        app:title="CollegeMate"
+        app:title="uRemIndMe"
         app:titleTextColor="@color/white"
         tools:layout_editor_absoluteX="1dp" />
 
