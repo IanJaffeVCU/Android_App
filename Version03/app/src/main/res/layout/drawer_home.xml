@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/home_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="uRemIndMe"
+        app:titleTextColor="@color/white"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <ListView
+        android:id="@+id/home_drawer_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/home_drawer_list"
+        app:layout_constraintTop_toBottomOf="@+id/home_toolbar"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/home_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/roundcornor_ripple"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Logout"
+        android:textAppearance="@style/NormalTextStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/home_aboutus" />
+
+    <Button
+        android:id="@+id/home_aboutus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundcornor_ripple"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="About Us"
+        android:textAppearance="@style/NormalTextStyle"
+        app:layout_constraintBottom_toBottomOf="@+id/home_logout"
+        app:layout_constraintEnd_toStartOf="@+id/home_logout"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/home_logout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

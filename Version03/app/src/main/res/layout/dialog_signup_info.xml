@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/signup_info_dialog_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/close_icon"
+            app:title="Account Details"
+            app:titleTextColor="#ffffff"
+            tools:layout_editor_absoluteX="1dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signup_info_dialog_toolbar">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signup_info_dialog_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Your Name" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/signup_info_dialog_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="159dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="164dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/roundcornor_ripple"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Submit"
+            android:textAppearance="@style/NormalTextStyle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signup_info_dialog_batch"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <RadioGroup
+            android:id="@+id/signup_info_dialog_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+            <RadioButton
+                android:id="@+id/signup_info_dialog_male"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/signup_info_dialog_female"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Female" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Gender"
+            android:textAppearance="@style/NormalTextViewAppearance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout8" />
+
+        <TextView
+            android:id="@+id/dialog_signup_info_branch_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Branch"
+            android:textAppearance="@style/NormalTextViewAppearance"
+            app:layout_constraintEnd_toStartOf="@+id/signup_info_dialog_branches"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signup_info_dialog_gender" />
+
+        <TextView
+            android:id="@+id/dialog_signup_info_year_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Year"
+            android:textAppearance="@style/NormalTextViewAppearance"
+            app:layout_constraintEnd_toStartOf="@+id/signup_info_dialog_year"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signup_info_dialog_branches" />
+
+        <TextView
+            android:id="@+id/dialog_signup_info_batch_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Batch"
+            android:textAppearance="@style/NormalTextViewAppearance"
+            app:layout_constraintEnd_toStartOf="@+id/signup_info_dialog_batch"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signup_info_dialog_year" />
+
+        <Button
+            android:id="@+id/signup_info_dialog_branches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundcornor_ripple"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Select Branch"
+            android:textAppearance="@style/NormalTextStyle"
+            app:layout_constraintBottom_toBottomOf="@+id/dialog_signup_info_branch_show"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/dialog_signup_info_branch_show"
+            app:layout_constraintTop_toTopOf="@+id/dialog_signup_info_branch_show" />
+
+        <Button
+            android:id="@+id/signup_info_dialog_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundcornor_ripple"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Select Year"
+            android:textAppearance="@style/NormalTextStyle"
+            app:layout_constraintBottom_toBottomOf="@+id/dialog_signup_info_year_show"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/dialog_signup_info_year_show"
+            app:layout_constraintTop_toTopOf="@+id/dialog_signup_info_year_show" />
+
+        <Button
+            android:id="@+id/signup_info_dialog_batch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundcornor_ripple"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Batch"
+            android:textAppearance="@style/NormalTextStyle"
+            app:layout_constraintBottom_toBottomOf="@+id/dialog_signup_info_batch_show"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/dialog_signup_info_batch_show"
+            app:layout_constraintTop_toTopOf="@+id/dialog_signup_info_batch_show" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
