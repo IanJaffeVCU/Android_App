@@ -7,48 +7,37 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.cmsc.uremindme.ui.home.HomeFragment"
+        android:name="com.example.version3_355app.ui.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.cmsc.uremindme.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_calendar"
+        android:name="com.example.version3_355app.ui.calendar.CalendarFragment"
+        android:label="@string/menu_calendar"
+        tools:layout="@layout/fragment_calendar" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.cmsc.uremindme.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_to_do"
+        android:name="com.example.version3_355app.ui.to_do.TodoFragment"
+        android:label="@string/menu_to_do"
+        tools:layout="@layout/fragment_to_do" />
+
     <fragment
-        android:id="@+id/nav_assignment"
-        android:name="com.cmsc.uremindme.assignment"
-        android:label="@string/menu_assignment"
-        tools:layout="@layout/fragment_assignment_list" />
-    <fragment
-        android:id="@+id/nav_classes"
-        android:name="com.cmsc.uremindme.classes"
-        android:label="@string/menu_classes"
-        tools:layout="@layout/fragment_classes_list" />
-    <fragment
-        android:id="@+id/nav_calender"
-        android:name="com.cmsc.uremindme.calenderFragment"
-        android:label="@string/menu_calender"
-        tools:layout="@layout/fragment_item_list" />
-    <fragment
-        android:id="@+id/nav_addNote"
-        android:name="com.cmsc.uremindme.add_note"
-        android:label="@string/menu_AddNote"
-        tools:layout="@layout/fragment_add_note" />
-    <fragment
-        android:id="@+id/nav_toDo"
-        android:name="com.cmsc.uremindme.todoFragment"
-        android:label="@string/menu_ToDo"
-        tools:layout="@layout/fragment_item_list2" />
+        android:id="@+id/nav_note"
+        android:name="com.example.version3_355app.ui.note.NoteFragment"
+        android:label="@string/menu_note"
+        tools:layout="@layout/fragment_note" />
+
     <fragment
         android:id="@+id/nav_settings"
-        android:name="com.cmsc.uremindme.SettingsFragment"
-        android:label="@string/menu_settings" />
+        android:name="com.example.version3_355app.ui.settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/nav_Profile"
+        android:name="com.example.version3_355app.ui.settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
 </navigation>

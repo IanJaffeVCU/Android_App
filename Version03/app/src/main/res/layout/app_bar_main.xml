@@ -9,14 +9,14 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/Theme.URemindMe.AppBarOverlay">
+        android:theme="@style/Theme.Version3_355app.AppBarOverlay">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/Theme.URemindMe.PopupOverlay" />
+            android:background="?attr/colorSecondary"
+            app:popupTheme="@style/Theme.Version3_355app.PopupOverlay" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -29,6 +29,6 @@
         android:layout_gravity="bottom|end"
         android:layout_marginEnd="@dimen/fab_margin"
         android:layout_marginBottom="16dp"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        app:srcCompat="@drawable/ic_note" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
