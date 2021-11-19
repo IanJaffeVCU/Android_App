@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">uRemIndMe</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_Email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="invite">Write Invitation \n Code Here</string>
+    <string name="Code">Invitation Code</string>
+    <string name="Track">Track Members</string>
+    <string name="points">Points</string>
+    <string name="ad">Watch Add</string>
+    <string name="FAQ">News</string>
+    <string name="Profile">Profile</string>
+    <array name="home_drawer_list">
+        <item>Profile</item>
+        <item>Personal Documents</item>
+        <item>Time Table</item>
+        <item>Attendance</item>
+        <item>Books</item>
+    </array>
+    <array name="weekdays">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+    </array>
+
+    <array name="timetable_timeinterval">
+        <item>8-9</item>
+        <item>9-10</item>
+        <item>10-11</item>
+        <item>11-12</item>
+        <item>12-1</item>
+        <item>1-2</item>
+        <item>2-3</item>
+        <item>3-4</item>
+        <item>4-5</item>
+        <item>5-6</item>
+    </array>
+
+    <array name="addsubject_lv_options">
+        <item>Delete Subject</item>
+        <item>Edit Subject name</item>
+    </array>
+
+    <array name="year_info">
+        <item>First Year</item>
+        <item>Second Year</item>
+        <item>Third Year</item>
+        <item>Fourth Year</item>
+    </array>
+
+</resources>
