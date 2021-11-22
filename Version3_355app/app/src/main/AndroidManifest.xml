@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Version3_355app">
         <activity
+            android:name=".FormsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_forms"
+            android:theme="@style/Theme.Version3_355app.NoActionBar" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
