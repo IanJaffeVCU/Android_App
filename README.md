@@ -1,4 +1,4 @@
-###Depricated new Github link below.
+### Depricated new Github link below.
 https://github.com/IanJaffeVCU/URemindMe
 
 
